@@ -10,6 +10,7 @@ import Checkout from './pages/Checkout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import NotFound from './pages/Notfound';
 
 // Sample product data
 const products = [
@@ -260,6 +261,7 @@ function App() {
             } />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
